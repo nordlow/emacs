@@ -1,10 +1,10 @@
-;;; thread-list.el --- List active threads in a buffer -*- lexical-binding: t -*-
+;;; thread.el --- Thread support in Emacs Lisp -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2018 Free Software Foundation, Inc.
 
 ;; Author: Gemini Lasswell <gazally@runbox.com>
 ;; Maintainer: emacs-devel@gnu.org
-;; Keywords: lisp, tools, maint
+;; Keywords: thread, tools
 
 ;; This file is part of GNU Emacs.
 
@@ -124,5 +124,5 @@ Confirm with the user first."
         (when (and (threadp thread) (thread-alive-p thread))
           (thread-signal thread sgnl nil))))))
 
-(provide 'thread-list)
-;;; thread-list.el ends here
+(provide 'thread)
+;;; thread.el ends here
