@@ -220,6 +220,7 @@ generic functions.")
 
 ;;;###autoload
 (defun xref-find-backend ()
+  "Dummy docstring."
   (run-hook-with-args-until-success 'xref-backend-functions))
 
 (cl-defgeneric xref-backend-definitions (backend identifier)

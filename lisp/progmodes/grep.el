@@ -594,6 +594,7 @@ This function is called from `compilation-filter-hook'."
 
 ;;;###autoload
 (defun grep-compute-defaults ()
+  "Dummy docstring."
   ;; Keep default values.
   (unless grep-host-defaults-alist
     (add-to-list

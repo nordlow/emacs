@@ -179,6 +179,7 @@ Both lists have to be sorted over <."
 
 ;;;###autoload
 (defun gnus-intersection (list1 list2)
+  "Dummy docstring."
   (let ((result nil))
     (while list2
       (when (memq (car list2) list1)

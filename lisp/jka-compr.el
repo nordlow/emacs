@@ -638,6 +638,7 @@ It is not recommended to set this variable permanently to anything but nil.")
 
 ;;;###autoload
 (defun jka-compr-handler (operation &rest args)
+  "Dummy docstring."
   (save-match-data
     (let ((jka-op (get operation 'jka-compr)))
       (if (and jka-op (not jka-compr-inhibit))

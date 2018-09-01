@@ -797,6 +797,7 @@ tags table for BUF and its (recursively) included tags tables."
 
 ;;;###autoload
 (defun tags-lazy-completion-table ()
+  "Dummy docstring."
   (let ((buf (current-buffer)))
     (lambda (string pred action)
       (with-current-buffer buf
@@ -2108,7 +2109,9 @@ for \\[find-tag] (which see)."
   "Tag order used in `xref-backend-definitions' to look for definitions.")
 
 ;;;###autoload
-(defun etags--xref-backend () 'etags)
+(defun etags--xref-backend ()
+  "Dummy docstring."
+  'etags)
 
 (cl-defmethod xref-backend-identifier-at-point ((_backend (eql etags)))
   (find-tag--default))
